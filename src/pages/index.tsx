@@ -1,11 +1,11 @@
-import Head from '../../node_modules/next/head';
-import Image from '../../node_modules/next/image';
-import styles from '../../styles/Home.module.css';
+import Head from '../../node_modules/next/head'
+import Image from '../../node_modules/next/image'
+import styles from '../../styles/Home.module.css'
 
 type props = {
-  title: string;
-  teste: string;
-};
+  title: string
+  teste: string
+}
 
 export default function Home({ title = 'React Avançado!' }: props) {
   return (
@@ -70,5 +70,5 @@ export default function Home({ title = 'React Avançado!' }: props) {
         </a>
       </footer>
     </div>
-  );
+  )
 }
