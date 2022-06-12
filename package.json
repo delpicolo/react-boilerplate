@@ -10,7 +10,9 @@
     "lint-fix": "eslint src --fix",
     "postinstall": "husky install",
     "test": "jest",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "src/**/*": [
@@ -25,7 +27,17 @@
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.2",
     "@babel/preset-typescript": "^7.17.12",
+    "@storybook/addon-actions": "^6.5.8",
+    "@storybook/addon-essentials": "^6.5.8",
+    "@storybook/addon-interactions": "^6.5.8",
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/addon-links": "^6.5.8",
+    "@storybook/builder-webpack5": "^6.5.8",
+    "@storybook/manager-webpack5": "^6.5.8",
+    "@storybook/react": "^6.5.8",
+    "@storybook/testing-library": "^0.0.12",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@types/jest": "^28.1.1",
@@ -35,6 +47,7 @@
     "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
+    "babel-loader": "^8.2.5",
     "babel-plugin-styled-components": "^2.0.7",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
