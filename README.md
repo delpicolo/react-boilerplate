@@ -82,6 +82,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - Improve unit testing;
 - Improve performance;
 - Improve lint
+- Adjust PWA settings
 
 # :rocket: Demo   
 
