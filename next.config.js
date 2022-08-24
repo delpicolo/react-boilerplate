@@ -1,15 +1,11 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-/** @type {import('next').NextConfig} */
-
-const withPWA = require('next-pwa')
 const isProd = process.env.NODE_ENV === 'production'
+const withPWA = require('next-pwa')({
+  dest: 'public',
+  disable: !isProd
+})
 
-const nextConfig = {
-  reactStrictMode: true,
-  pwa: {
-    dest: 'public',
-    disable: !isProd
-  }
-}
-
-module.exports = withPWA(nextConfig)
+module.exports = withPWA({
+  // next.js config
+  reactStrictMode: true
+})
